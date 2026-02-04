@@ -5,9 +5,6 @@
 // function App() {
 //   const [counter,setCounter] = useState(0);
 
-//   // without 
-//   // with
-//   // empty
 
 //   useEffect(()=>{
 //     console.log("this is without [] <-- dependency");
@@ -33,10 +30,6 @@
 
 // export default App;
 
-
-
-
-
 import React  from "react";
 import "./App.css";
 import { Api_Calling } from "./components/Api_Calling";
@@ -56,7 +49,6 @@ export const App = () =>{
   React.useEffect(()=>{
     console.log("-> runs when count2 changes", count2);
   }, [count2]);
-
   return (
     <>
       <h1> count_1{count}</h1>
@@ -71,7 +63,6 @@ export const App = () =>{
       <button onClick={()=> setCount2 ((prev)=> prev + 1)}>
         count2 increment
       </button>
-
       < Api_Calling />
     </>
   );

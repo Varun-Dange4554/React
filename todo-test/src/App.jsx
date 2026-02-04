@@ -10,11 +10,14 @@ function App() {
 
   return (
     <>
-    <TodoInput todolist={todolist}
-        setTodoList={setTodoList}/>
+    <TodoInput todolist={todolist} setTodoList={setTodoList}/>
     <TodoList todolist={todolist}/>
     </> 
   )
 }
 
 export default App
+
+
+
+

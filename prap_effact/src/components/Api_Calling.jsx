@@ -1,9 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-
 import '../App.css';
-
 export const Api_Calling = ()=>{
     const [data,setData] = useState ([]);
 
@@ -17,9 +15,6 @@ export const Api_Calling = ()=>{
         .finally(()=> console.log('done'));
 
     };
-
-    // console.log(data)
-
     useEffect (()=>{
         getApi();
     },[]);
